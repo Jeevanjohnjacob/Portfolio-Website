@@ -289,8 +289,8 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   width: 44px;
   height: 44px;
   text-align: center;
@@ -299,6 +299,7 @@ header .navbar ul li a:hover {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 .social-icons a:active,
 .social-icons a:focus,
@@ -1141,9 +1142,10 @@ form .button-area {
   font-size: 1.7rem;
   margin-right: 1rem;
   transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
   border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 .footer .box-container .box .share a:hover {
   background: transparent;
