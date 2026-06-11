@@ -9,11 +9,11 @@
     },
     {
         "name": "QML",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "icon": "https://img.icons8.com/color/48/000000/qt.png"
     },
     {
         "name": "MATLAB",
-        "icon": "https://www.mathworks.com/favicon.ico"
+        "icon": "https://img.icons8.com/fluency/48/000000/matlab.png"
     },
     {
         "name": "YOLOv5",
@@ -28,8 +28,8 @@
         "icon": "https://img.icons8.com/color/48/000000/tensorflow.png"
     },
     {
-        "name": "Scikit-learn",
-        "icon": "https://img.icons8.com/color/48/000000/scikit-learn.png"
+        "name": "Scikit-Learn",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/48px-Scikit_learn_logo_small.svg.png"
     },
     {
         "name": "Yocto",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Qt",
-        "icon": "https://www.qt.io/favicon.ico"
+        "icon": "https://img.icons8.com/color/48/000000/qt.png"
     },
     {
         "name": "Arduino",

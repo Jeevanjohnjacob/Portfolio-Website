@@ -7,7 +7,7 @@
     <meta name="keywords" content="jeevan john jacob, portfolio, data science, machine learning, computer vision, embedded systems, full stack developer" />
     <meta name="description" content="Welcome to Jeevan John Jacob's Portfolio. Data Science graduate student, AI/ML engineer, and full-stack developer." />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92O1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
     <title>Portfolio | Jeevan John Jacob</title>
 </head>
@@ -84,7 +84,7 @@
     <div class="box-container">
         <div class="box">
             <div class="image">
-                <img draggable="false" src="https://images.unsplash.com/photo-1599092102604-feda33ecc89d?w=400&h=300&fit=crop" alt="Amrita School of Computing">
+                <img draggable="false" src="./assets/images/educat/amrita college mtech.jpeg" alt="Amrita School of Computing">
             </div>
             <div class="content">
                 <h3>M.Tech in Data Science</h3>
@@ -94,7 +94,7 @@
         </div>
         <div class="box">
             <div class="image">
-                <img draggable="false" src="https://images.unsplash.com/photo-1564307592333-e0d9b53b3dc5?w=400&h=300&fit=crop" alt="Amrita School of Engineering Bangalore">
+                <img draggable="false" src="./assets/images/educat/amrita college btech.jpeg" alt="Amrita School of Engineering Bangalore">
             </div>
             <div class="content">
                 <h3>B.Tech in Electronics and Communications Engineering</h3>
@@ -104,7 +104,7 @@
         </div>
         <div class="box">
             <div class="image">
-                <img draggable="false" src="https://images.unsplash.com/photo-1507842217343-583f20270319?w=400&h=300&fit=crop" alt="Sri Chaitanya PU College Bangalore">
+                <img draggable="false" src="./assets/images/educat/sri chaitnaya college.webp" alt="Sri Chaitanya PU College Bangalore">
             </div>
             <div class="content">
                 <h3>12th Grade Education</h3>
@@ -117,48 +117,92 @@
 
 <section class="work" id="work">
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-    <div class="box-container">
-        <div class="box tilt">
-            <img draggable="false" src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=500&h=400&fit=crop" alt="Fire Detection System" />
-            <div class="content">
-                <div class="tag"><h3>Real-Time Fire Detection & Extinguishing System</h3></div>
-                <div class="desc">
-                    <p>YOLOv5 and OpenCV based fire, smoke, and flame detection with Streamlit visualization, sprinkler simulation, and Twilio alerts.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/Jeevanjohnjacob" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
+    <div class="projects-grid" id="projectsGrid">
+        <div class="project-card">
+            <h3>Real-Time Fire Detection & Extinguishing System</h3>
+            <p>Built a real-time detection system for fire, smoke, and flame from webcam feeds using YOLOv5 and OpenCV. Achieved mAP of 0.456 and 60%+ precision on a custom Roboflow dataset. Integrated Streamlit for live visualization, sprinkler simulation, and Twilio SMS alerts.</p>
+            <div class="project-tags"><span>YOLOv5</span><span>OpenCV</span><span>Streamlit</span><span>Twilio</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
         </div>
-        <div class="box tilt">
-            <img draggable="false" src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Brain Activity Classification" />
-            <div class="content">
-                <div class="tag"><h3>Harmful Brain Activity Classification</h3></div>
-                <div class="desc">
-                    <p>EEG classification project on 17,300 patients using PCA and machine learning models, reaching 95% accuracy with Random Forest.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/Jeevanjohnjacob" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
+        <div class="project-card">
+            <h3>Harmful Brain Activity Classification</h3>
+            <p>Classified six types of harmful brain activity using EEG data from 17,300 patients. Reduced features from 224 to 52 using PCA while maintaining 94%+ accuracy and reached 95% with Random Forest classifier.</p>
+            <div class="project-tags"><span>Python</span><span>Scikit-learn</span><span>PCA</span><span>EEG</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
         </div>
-        <div class="box tilt">
-            <img draggable="false" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop" alt="Reading Aid" />
-            <div class="content">
-                <div class="tag"><h3>Progressive Reading Aid</h3></div>
-                <div class="desc">
-                    <p>Raspberry Pi and deep learning based reading aid for visually impaired users with real-time object detection.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/Jeevanjohnjacob" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
+        <div class="project-card">
+            <h3>Progressive Reading Aid for Visually Impaired</h3>
+            <p>Created a real-time reading aid using deep learning object detection on Raspberry Pi to assist visually impaired users in reading text and navigating their environment.</p>
+            <div class="project-tags"><span>Raspberry Pi</span><span>Deep Learning</span><span>Object Detection</span><span>Python</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Hybrid Encryption Algorithm</h3>
+            <p>Research-driven project on secure key generation and an effective hybrid encryption system combining symmetric and asymmetric approaches for enhanced communication security.</p>
+            <div class="project-tags"><span>Cryptography</span><span>Python</span><span>Security</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Blockchain Healthcare System</h3>
+            <p>Developed a healthcare system using blockchain for secure, distributed medical record handling with trustable access control and patient data privacy.</p>
+            <div class="project-tags"><span>Blockchain</span><span>Ethereum</span><span>Solidity</span><span>Healthcare</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>AI-Based Route Optimization (VANET)</h3>
+            <p>Applied artificial intelligence techniques for optimizing vehicular ad-hoc network routing, improving communication reliability and reducing latency in dynamic traffic scenarios.</p>
+            <div class="project-tags"><span>AI</span><span>VANET</span><span>Networking</span><span>Optimization</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Embedded Qt/QML Application Development</h3>
+            <p>Developed cross-platform GUI applications using Qt framework and QML for embedded systems with Yocto Linux, integrating C++ backend logic with modern fluid interfaces.</p>
+            <div class="project-tags"><span>Qt</span><span>QML</span><span>C++</span><span>Yocto</span></div>
+            <div class="project-links">
+                <a href="https://github.com/Jeevanjohnjacob" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio website built with HTML, CSS, and JavaScript featuring particle animations, scroll effects, responsive design, and integrated contact form with EmailJS.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Particles.js</span></div>
+            <div class="project-links">
+                <a href="https://jeevanjohnjacob.github.io/Portfolio-Website/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="https://github.com/Jeevanjohnjacob/Portfolio-Website" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
         </div>
     </div>
-    <div class="viewall"><a href="/projects" class="btn"><span>View All</span><i class="fas fa-arrow-right"></i></a></div>
+
+    <h2 class="heading publications-heading"><i class="fas fa-book"></i> Publications</h2>
+    <div class="publications-list">
+        <div class="publication-card">
+            <h3>AI-Based Optimization for Vehicular Ad-Hoc Networks</h3>
+            <p class="pub-details"><i class="fas fa-calendar-alt"></i> 2025 &nbsp;|&nbsp; <i class="fas fa-university"></i> Conference Paper</p>
+            <p>Research on applying artificial intelligence techniques to optimize routing in vehicular networks for improved traffic communication.</p>
+        </div>
+        <div class="publication-card">
+            <h3>Secure Key Generation and Effective Hybrid Encryption</h3>
+            <p class="pub-details"><i class="fas fa-calendar-alt"></i> 2024 &nbsp;|&nbsp; <i class="fas fa-university"></i> Journal Paper</p>
+            <p>Published work on developing a hybrid encryption algorithm combining multiple cryptographic approaches for enhanced security.</p>
+        </div>
+        <div class="publication-card">
+            <h3>Harmful Brain Activity Classification Using EEG Signals</h3>
+            <p class="pub-details"><i class="fas fa-calendar-alt"></i> 2024 &nbsp;|&nbsp; <i class="fas fa-university"></i> Research Paper</p>
+            <p>Classification of harmful brain activity patterns from EEG data using machine learning with dimensionality reduction techniques.</p>
+        </div>
+    </div>
 </section>
 
 <section class="experience" id="experience">
@@ -172,30 +216,18 @@
         </div>
         <div class="container left">
             <div class="content">
-                <div class="tag"><h2>Research Projects</h2></div>
-                <div class="desc"><h3>Fire detection, EEG classification, and reading aid systems</h3><p>2024 - 2025</p></div>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
                 <div class="tag"><h2>Amrita School of Computing</h2></div>
                 <div class="desc"><h3>M.Tech in Data Science</h3><p>2024 - Present</p></div>
             </div>
         </div>
-        <div class="container left">
+        <div class="container right">
             <div class="content">
                 <div class="tag"><h2>Amrita School of Engineering</h2></div>
                 <div class="desc"><h3>B.Tech in Electronics and Communications Engineering</h3><p>2020 - 2024</p></div>
             </div>
         </div>
-        <div class="container right">
-            <div class="content">
-                <div class="tag"><h2>Publications</h2></div>
-                <div class="desc"><h3>AI-based optimization, encryption, and vehicular networking papers</h3><p>2024 - 2025</p></div>
-            </div>
-        </div>
     </div>
-    <div class="viewall"><a href="/experience" class="btn"><span>View All</span><i class="fas fa-arrow-right"></i></a></div>
+    <div class="morebtn"><a href="/experience" class="btn"><span>View All</span><i class="fas fa-arrow-right"></i></a></div>
 </section>
 
 <section class="contact" id="contact">
@@ -210,7 +242,7 @@
                     <div class="field"><input type="text" name="phone" placeholder="Phone"><i class='fas fa-phone-alt'></i></div>
                     <div class="message"><textarea placeholder="Message" name="message" required></textarea><i class="fas fa-comment-dots"></i></div>
                 </div>
-                <div class="button-area"><button type="submit">Submit <i class="fa fa-paper-plane"></i></button></div>
+                <div class="button-area"><button type="submit">Submit <i class="fas fa-paper-plane"></i></button></div>
             </form>
         </div>
     </div>
@@ -244,7 +276,7 @@
             </div>
         </div>
     </div>
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jeevan-john-jacob"> Jeevan John Jacob</a></h1>
+    <h1 class="credit">Designed with <i class="fas fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jeevan-john-jacob"> Jeevan John Jacob</a></h1>
 </section>
 
 <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>

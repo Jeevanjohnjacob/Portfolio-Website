@@ -507,6 +507,11 @@ header .navbar ul li a:hover {
 .skills .container .bar .info i {
   font-size: 4rem;
 }
+.skills .container .bar .info img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
@@ -642,7 +647,6 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
 }
 .work h2 {
@@ -652,111 +656,121 @@ header .navbar ul li a:hover {
 .work .heading span {
   color: rgb(255, 230, 0);
 }
-.work .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem;
+.work .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
-.work .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  height: 30rem;
-}
-.work .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.work .box-container .box .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-}
-.work .box-container .box .content .tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 4.5rem;
-  width: 100%;
-  padding-left: 1rem;
-  background: #ffd900;
-}
-.work .box-container .box .content .tag h3 {
-  font-size: 2rem;
-}
-.work .box-container .box:hover .content {
-  top: 25%;
-}
-.work .desc {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.work .desc p {
-  font-size: 1.5rem;
-}
-.work .desc .btns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 2rem;
-}
-.work .desc .btns .btn {
-  line-height: 0;
-  display: inline;
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
-  color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 2rem;
-}
-.work .desc .btns .btn:hover {
-  background: #310ae0f5;
-}
-.work .viewall {
-  display: flex;
-  justify-content: center;
-}
-.work .viewall .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
-  text-align: center;
-}
-.work .viewall .btn span {
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
-}
-.work .viewall .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
+.work .project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2.5rem;
   transition: 0.3s;
 }
-.work .viewall .btn:hover {
-  background: #fff;
-  color: #000;
+.work .project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-.work .viewall .btn:hover i {
-  transform: translateX(5px);
+.work .project-card h3 {
+  font-size: 1.8rem;
+  color: #ffd900;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.work .project-card p {
+  font-size: 1.4rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-transform: none;
+  font-family: "Nunito", sans-serif;
+}
+.work .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+.work .project-tags span {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 217, 0, 0.15);
+  color: #ffd900;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+.work .project-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.work .project-links a {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.work .project-links a:hover {
+  background: #ffd900;
+  color: #000;
+  border-color: #ffd900;
+}
+.work .project-links a i {
+  margin-right: 0.5rem;
+}
+/* publications */
+.work .publications-heading {
+  margin-top: 4rem;
+  color: #fff;
+}
+.work .publications-heading span {
+  color: rgb(255, 230, 0);
+}
+.work .publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.work .publication-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #ffd900;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transition: 0.3s;
+}
+.work .publication-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.work .publication-card h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.work .publication-card .pub-details {
+  font-size: 1.3rem;
+  color: #ffd900;
+  margin-bottom: 0.8rem;
+}
+.work .publication-card .pub-details i {
+  margin-right: 0.3rem;
+}
+.work .publication-card p {
+  font-size: 1.4rem;
+  color: #ccc;
+  text-transform: none;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
 }
 /* work section ends */
 
@@ -1165,7 +1179,7 @@ form .button-area {
 .footer .credit a {
   color: #ffae00;
 }
-.footer .fa {
+.footer .fa-heart {
   color: #e90606;
   margin: 0 0.3rem;
   font-size: 1.5rem;
